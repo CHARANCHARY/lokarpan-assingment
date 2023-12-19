@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/5a32176035.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-container" id="mainSection">
+        <nav class="nav-bar-section">
+            <img src="https://res.cloudinary.com/du74u7bsh/image/upload/v1702908624/pngegg_dl517y.png" class="logo" />
+            <div class="">
+                <div class="close-btn-section2" id="closeSection">
+                    <div class="close-btn-section3">
+                        <P>Close</P>
+                        <button id="closeBtn">
+                            <i class="fa-regular fa-circle-xmark fa-2xl" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="search-menu-section">
+                    <div class="after-click-search" id="searchTab">
+                        <input class="input-section" id="inputElement" onchange="inputSearch()" placeholder="Search Harvard University" />
+                        <div>
+                            <button class="search-btn">
+                                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            </button>
+                            <button id="searchTabCloseBtn" class="close-btn-for-search">
+                                <i class="fa-regular fa-circle-xmark fa-2xl " style="color: #ffffff;"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="search-section" id="searchSection">
+                        <button class="search-btn" id="searchBtnOnClick">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </button>
+
+                        <p>Search</p>
+                    </div>
+
+                    <div class="search-section" id="menuSection">
+                        <button class="navbar-toggler search-section" id="menubtn" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-grip-lines fa-2xl icon"></i>
+                            <p>Menu</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="collapse list-section list-section2" id="navbarNav">
+        <ul class="main-list" id="mainListSection">
+            <li class="nav-item">
+                <a class="nav-link active" href="#" id="academicsSection">Academics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="campusSection">Campus</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="inFocusSection">In Focus</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="visitSection">Visit</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="aboutSection">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="newsSection">News</a>
+            </li>
+            <div class="bottom-list">
+                <ul class="bottom-list-section">
+                    <li class="bottom-list-special">
+
+
+                        <span class="bottom-list-special">Quick Lines <i class="fa-solid fa-arrow-right" style="color: #6D6D6D;"></i></span>
+
+                    </li>
+                    <li>
+                        A to Z index
+                    </li>
+                    <li>
+                        Find a Person
+                    </li>
+                    <li>
+                        Events
+                    </li>
+                    <li>
+                        Media relations
+                    </li>
+
+                </ul>
+            </div>
+        </ul>
+
+        <ul id="subAcadamicSection" class="campus-sub-list">
+
+            <li>
+                <span class="back-btn" id="backBtnForAcademics" type="button"><i class="fa-solid fa-chevron-left fa-xl"></i></span>
+                <a href="#">Academics</a>
+                <p>Learning at Harvard can happen for every type of leaner, any phase of life</p>
+            </li>
+            <li>
+                <a href="#" id="onclickDegreProgram">Degree Programs <span><i class="fa-solid fa-angle-right fa-sm" style="color: #fcfcfc;"></i></i></span></a>
+            </li>
+            <li>
+                <a href="#">Professional and LifeLong</a>
+            </li>
+            <li>
+                <a href="#">Learning</a>
+            </li>
+            <li>
+                <a href="#">Harvard Online</a>
+            </li>
+            <li>
+                <a href="#">Harvard Schools</a>
+            </li>
+        </ul>
+
+        <ul id="subCampusSection" class="campus-sub-list">
+            <li>
+                <a href="#">Harvard's Campus</a>
+                <p>Get tickets to our next game,hours and locations for our libraries and museums, and information about your next career move.</p>
+            </li>
+            <li>
+                <a href="#">Labraries</a>
+            </li>
+            <li>
+                <a href="#">Museums</a>
+            </li>
+            <li>
+                <a href="#">Athletics</a>
+            </li>
+            <li>
+                <a href="#">Work at Harvard</a>
+            </li>
+            <li>
+                <a href="#">Events</a>
+            </li>
+            <li>
+                <a href="#">Commencement</a>
+            </li>
+        </ul>
+
+        <ul id="subInFocusSection" class="campus-sub-list">
+            <li>
+                <a href="#">Explore and understand the world with Harvard</a>
+                <p>In Focus is a curated examination of Harvard's research, scholarly work, and community. Recent topics include:</p>
+            </li>
+            <li>
+                <a href="#">Artificial Intelligence </a>
+            </li>
+            <li>
+                <a href="#">Transportation</a>
+            </li>
+            <li>
+                <a href="#">Early Development </a>
+            </li>
+            <li>
+                <a href="#">Explore the In Focus archives</a>
+            </li>
+        </ul>
+
+        <ul id="subVisitSection" class="campus-sub-list">
+            <li>
+                <a href="#">Visit Harvard</a>
+                <p>Ideas and assistance for your trip to our campus.</p>
+            </li>
+            <li>
+                <a href="#">Tours</a>
+            </li>
+            <li>
+                <a href="#">Maps and Directions</a>
+            </li>
+            <li>
+                <a href="#">Tour Providers</a>
+            </li>
+        </ul>
+
+        <ul id="subAboutSection" class="campus-sub-list">
+            <li>
+                <a href="#">About Harvard</a>
+                <p>Learn how Harvard is structured, explore our long history, and discover our extended community.</p>
+            </li>
+            <li>
+                <a href="#">History of Harvard</a>
+            </li>
+            <li>
+                <a href="#">Leadership and Governance </a>
+            </li>
+            <li>
+                <a href="#">University Professorships</a>
+            </li>
+            <li>
+                <a href="#">Diversity and Inclusion</a>
+            </li>
+            <li>
+                <a href="#">Harvard in the Community</a>
+            </li>
+            <li>
+                <a href="#">Harvard in the World</a>
+            </li>
+        </ul>
+
+        <ul id="subNewsSection" class="campus-sub-list">
+            <li>
+                <a href="#">The Harvard Gazette </a>
+                <p>Official news from Harvard University about science, medicine, art, campus life, University issues, and broader national and global concerns.</p>
+            </li>
+            <li>
+                <a href="#">Trending News Stories</a>
+            </li>
+            <li>
+                <a href="#">Sign up for the Daily Gazette</a>
+            </li>
+        </ul>
+
+
+        <!--   Mini Sub List -->
+
+        <ul id="degreeProgramsMiniSubList" class="mini-sub-list">
+            <li>
+                <a href="#">Degree programs</a>
+                <p>Browse all of our undergraduate concentrations and graduate degrees.</p>
+            </li>
+            <li>
+                <a href="#">Undergraduate Degrees</a>
+            </li>
+            <li>
+                <a href="#">Graduate Degrees</a>
+            </li>
+            <li>
+                <a href="#">Others</a>
+            </li>
+        </ul>
+
+
+        <!--  Bottom List -->
+
+    </div>
+
+
+    <script>
+        function inputSearch() {
+            var inputElement = document.getElementById("inputElement");
+            inputElement.style.color = "#fff";
+        }
+    </script>
+</body>
+
+</html>
